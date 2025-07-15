@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
             $_SESSION['nouvelAnimal'] = new Limace((string)$_POST["nom"], (int)$_POST["age"], (float)$_POST["poids"]);
             break;            
     }
-    header('Location: formulaire.php');
+    header('Location: index.html');
     exit;
 }
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['action']) && $_POST['action'] === "delete") {
         unset($_SESSION["nouvelAnimal"]);
-        header('Location: formulaire.php');
+        header('Location: index.php');
         exit;
     }
     $nouvelAnimal = $_SESSION['nouvelAnimal'] ?? null;
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
     $_SESSION['nouvelAnimal']->setAge((int)$_POST["age"]); 
     $_SESSION['nouvelAnimal']->setPoids((float)$_POST["poids"]); 
     $_SESSION['animal_updated'] = true; // rajouté pour modif texte
-    header('Location: formulaire.php');
+    header('Location: index.html');
     exit;
 }
 if (isset($_SESSION['animal_updated'])) {
