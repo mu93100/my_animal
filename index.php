@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 <?php include "session.php"; ?> <!--  recupération des classes issues d'un autre fichier -->
 
     <!--CORRECTION MU Comment soumettre un formulaire à une autre page ?
@@ -32,7 +33,7 @@ si on reste sur la m^p. :::
     <h2 class="coiny">My Animal de compagnie 💗</h2>
 
     <!-- CREATE -->
-    <form method="post" action="index.html">
+    <form method="post" action="index.php">
         <select class="coiny p1" name="nouvelAnimal" required>
             <option value="">Sélectionne ton animal --></option>
             <option value="ccccchat">Chat</option>
@@ -67,7 +68,7 @@ si on reste sur la m^p. :::
             </p>
         <?php endif; ?>
     <!-- DELETE --> 
-    <form class="formDelete" method="post" action="index.html">
+    <form class="formDelete" method="post" action="index.php">
             <button class="btDelete coiny" type="submit" name="action" value="delete" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet animal ?')">Supprime ton animal</button>
     </form>    
         
@@ -75,7 +76,7 @@ si on reste sur la m^p. :::
     <form id="formUpdate">
             <button id="btUpdate" class="coiny" type="button" >Modifie ton animal favori</button>
     </form>  
-    <form id="formUpdateFull" class="hide" method="post" action="index.html">
+    <form id="formUpdateFull" class="hide" method="post" action="index.php">
         <!-- <h3 class="coiny p1">Modifie ton animal favori</h3> -->
         <select class="p1" name="nouvelAnimal" required>
             <option value="<?= $nouvelAnimal->getTypeAnimal() ?>"><?= $nouvelAnimal->getTypeAnimal() ?></option>

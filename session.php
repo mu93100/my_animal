@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
             $_SESSION['nouvelAnimal'] = new Limace((string)$_POST["nom"], (int)$_POST["age"], (float)$_POST["poids"]);
             break;            
     }
-    header('Location: index.html');
+    header('Location: index.php');
     exit;
 }
 
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
     $_SESSION['nouvelAnimal']->setAge((int)$_POST["age"]); 
     $_SESSION['nouvelAnimal']->setPoids((float)$_POST["poids"]); 
     $_SESSION['animal_updated'] = true; // rajouté pour modif texte
-    header('Location: index.html');
+    header('Location: index.php');
     exit;
 }
 if (isset($_SESSION['animal_updated'])) {
