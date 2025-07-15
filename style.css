@@ -144,3 +144,20 @@ span{
     font-size: 2.5rem; 
     text-shadow: -1px -1px 0  #ffff00, 1px -1px 0  #cfbf2e, -1px 1px 0 #000, 1px 1px 0 #000; 
 } */
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (max-width: 600px){
+    
+}
+/* (max-width: 600px)
+Tablettes (portrait/paysage)	601 – 991	@media (min-width: 600px)
+Tablettes (paysage)		≥ 768	@media (min-width: 768px)
+Laptops / Desktops		≥ 992	@media (min-width: 992px)
+Grands écrans			≥ 1200	@media (min-width: 1200px) */

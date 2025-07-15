@@ -30,7 +30,7 @@ si on reste sur la m^p. :::
 
 <!-- sinon ::: <form method="post" action="session.php"> --> 
 
-    <h2 class="coiny">My Animal de compagnie 💗</h2>
+    <h1 class="coiny">My Animal de compagnie 💗</h1>
 
     <!-- CREATE -->
     <form method="post" action="index.php">
