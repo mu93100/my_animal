@@ -172,10 +172,6 @@ textarea::placeholder {
     form{
         width: 60%;
     }
-    /* .formDelete, #formUpdate{
-        padding: 0.5rem; 
-        margin: 1rem;
-    } */
     .btDelete, #btUpdate{
         font-size: 1rem;
     }
