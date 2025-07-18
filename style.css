@@ -51,7 +51,6 @@ form{
 select {
     background-color: white;
     color: rgb(252, 6, 6);
-    /* border: 1px solid #888; */
 }
 
 /*    BUTTON    */
@@ -61,13 +60,13 @@ button {
     border-radius: 1rem;
     padding: 0.7rem 2rem;
     background-color: white;
-
+    color: black;
 }
 .btDelete, #btUpdate{
     width: 80%;
     align-self: center; 
     background-color: transparent;
-    color: white;
+    color: white; 
     font-size: 1.35rem;
     line-height: 1.4;
     border-radius: 0.5rem;
@@ -132,14 +131,13 @@ textarea::placeholder {
 .coiny{
     font-family: "Coiny";
     letter-spacing: .04rem;
-    /* text-shadow: 1px -2px 0 white; */
 }
 .honk {
     font-family: "Honk";
     font-size: 5rem;
 }
 
-
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 480px){
     body{
@@ -153,20 +151,18 @@ textarea::placeholder {
     form{
         width: 86%;
     }
-    /* .formDelete, #formUpdate{
-        padding: 0.5rem; 
-        margin: 1rem;
-    } */
     .btDelete, #btUpdate{
         font-size: 1rem;
     }
     p{
         margin: 0 1.3rem;
     }
+    button {
+    color: black !important;
+}
 }
 @media screen and (max-width: 767px) and (min-width: 481px){
-
-    h1{
+    h1{      
         font-size: 1.7rem;
     }
     form{
@@ -178,4 +174,4 @@ textarea::placeholder {
     p{
         margin: 0 1.3rem;
     }
-
+}
